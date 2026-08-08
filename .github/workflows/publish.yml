@@ -3,11 +3,11 @@ on:
   push:
    branches:
     - main
-    permissions:
-    packages: write
-    contents: read
+permissions:
+  packages: write
+  contents: read
 jobs:
-publish:
+ publish:
         runs-on: ubuntu-latest
         steps:
         - name: Checkout
